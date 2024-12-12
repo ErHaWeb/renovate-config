@@ -1,0 +1,59 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>ErHaWeb/renovate-config",
+    "config:js-app",
+    "npm:unpublishSafe"
+  ],
+  "enabledManagers": [
+    "npm"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "pin",
+        "digest",
+        "patch",
+        "lockFileMaintenance",
+        "bump"
+      ],
+      "matchManagers": [
+        "npm"
+      ],
+      "matchDepTypes": [
+        "dependencies",
+        "peerDependencies"
+      ],
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "rangeStrategy": "replace",
+      "groupName": "frontend runtime dependencies",
+      "enabled": true
+    },
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "pin",
+        "digest",
+        "patch",
+        "lockFileMaintenance",
+        "bump"
+      ],
+      "matchManagers": [
+        "npm"
+      ],
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "rangeStrategy": "replace",
+      "groupName": "frontend build dependencies",
+      "enabled": true,
+      "automerge": true
+    }
+  ]
+}

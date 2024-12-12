@@ -1,0 +1,98 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>ErHaWeb/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "digest",
+        "patch",
+        "lockFileMaintenance"
+      ],
+      "matchManagers": [
+        "composer"
+      ],
+      "matchDepTypes": [
+        "require"
+      ],
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "groupName": "PHP packages",
+      "rangeStrategy": "replace"
+    },
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "digest",
+        "patch",
+        "lockFileMaintenance"
+      ],
+      "matchManagers": [
+        "composer"
+      ],
+      "matchDepTypes": [
+        "require"
+      ],
+      "matchPackagePatterns": [
+        "giggsey/libphonenumber-for-php",
+        "guzzlehttp/psr7",
+        "jms/*",
+        "nesbot/carbon",
+        "ocramius/package-versions",
+        "php-http/*",
+        "sentry/sentry",
+        "symfony/*"
+      ],
+      "groupName": "known good packages",
+      "automerge": true,
+      "rangeStrategy": "replace"
+    },
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "digest",
+        "patch",
+        "pin",
+        "lockFileMaintenance"
+      ],
+      "matchManagers": [
+        "composer"
+      ],
+      "matchDepTypes": [
+        "require-dev"
+      ],
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "groupName": "development dependencies",
+      "excludePackagePatterns": [
+        "^typo3/"
+      ],
+      "enabled": true,
+      "automerge": true,
+      "rangeStrategy": "pin"
+    },
+    {
+      "matchUpdateTypes": [
+        "bump",
+        "pin"
+      ],
+      "matchManagers": [
+        "composer"
+      ],
+      "enabled": false
+    }
+  ],
+  "postUpgradeTasks": {
+    "commands": [
+      "composer update -W"
+    ],
+    "fileFilters": [
+      "composer.lock"
+    ],
+    "executionMode": "update"
+  }
+}

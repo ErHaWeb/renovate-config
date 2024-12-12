@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>ErHaWeb/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "pin",
+        "digest",
+        "patch",
+        "bump"
+      ],
+      "matchManagers": [
+        "dockerfile"
+      ],
+      "labels": [
+        "docker"
+      ],
+      "enabled": true,
+      "automerge": true
+    }
+  ]
+}

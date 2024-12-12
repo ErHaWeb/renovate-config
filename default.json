@@ -1,0 +1,34 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":combinePatchMinorReleases"
+  ],
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
+  "baseBranches": [
+    "develop"
+  ],
+  "composer": {
+    "fileMatch": [
+      "^/composer\\.json$"
+    ]
+  },
+  "enabledManagers": [
+    "composer"
+  ],
+  "commitMessagePrefix": "[RENOVATE] ",
+  "commitMessageTopic": "{{depName}}",
+  "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": "before 1pm every day"
+  },
+  "platform": "github",
+  "platformAutomerge": true,
+  "ignoreTests": true,
+  "timezone": "Europe/Berlin",
+  "schedule": [
+    "* 9-18 * * *"
+  ]
+}
