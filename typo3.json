@@ -86,6 +86,9 @@
       "enabled": false
     }
   ],
+  "allowedPostUpgradeCommands": [
+    "composer update -W"
+  ],
   "postUpgradeTasks": {
     "commands": [
       "composer update -W"
