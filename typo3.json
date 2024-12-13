@@ -3,9 +3,6 @@
   "extends": [
     "github>ErHaWeb/renovate-config"
   ],
-  "allowedPostUpgradeCommands": [
-    "composer update -W"
-  ],
   "packageRules": [
     {
       "matchUpdateTypes": [
@@ -88,14 +85,5 @@
       ],
       "enabled": false
     }
-  ],
-  "postUpgradeTasks": {
-    "commands": [
-      "composer update -W"
-    ],
-    "fileFilters": [
-      "composer.lock"
-    ],
-    "executionMode": "update"
-  }
+  ]
 }
