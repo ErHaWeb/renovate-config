@@ -6,6 +6,7 @@
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
+  "rebaseWhen": "behind-base-branch",
   "baseBranches": [
     "main"
   ],
