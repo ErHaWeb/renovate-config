@@ -21,10 +21,6 @@
   "commitMessagePrefix": "[RENOVATE] ",
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": " ({{{displayFrom}}} => {{{displayTo}}})",
-  "lockFileMaintenance": {
-    "enabled": true,
-    "schedule": "before 1pm every day"
-  },
   "platform": "github",
   "platformAutomerge": true,
   "ignoreTests": true,
