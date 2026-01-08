@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>ErHaWeb/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": [
+        "composer"
+      ],
+      "matchPackageNames": [
+        "typo3/cms-**"
+      ],
+      "groupName": "TYPO3 Core update",
+      "rangeStrategy": "update-lockfile",
+      "allowedVersions": "<=12.4.99"
+    }
+  ]
+}
