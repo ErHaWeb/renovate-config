@@ -28,5 +28,30 @@
   "timezone": "Europe/Berlin",
   "schedule": [
     "* 9-18 * * *"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "b13/container",
+        "cweagans/composer-patches",
+        "eliashaeussler/typo3-warming",
+        "erhaweb/feed-display",
+        "erhaweb/klaro-consent-manager",
+        "erhaweb/l10ntable-extended",
+        "friendsoftypo3/content-blocks",
+        "friendsoftypo3/interest",
+        "georgringer/news",
+        "helhum/dotenv-connector",
+        "helhum/typo3-console",
+        "ichhabrecht/content-defender",
+        "in2code/powermail",
+        "lochmueller/sourceopt",
+        "lochmueller/staticfilecache",
+        "lolli/dbdoctor"
+      ],
+      "groupName": "Enabled Extension Updates",
+      "rangeStrategy": "in-range-only",
+      "enabled": true
+    }
   ]
 }
