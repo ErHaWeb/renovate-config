@@ -44,7 +44,7 @@
         "sentry/sentry",
         "symfony/*"
       ],
-      "groupName": "known good packages",
+      "groupName": "Known good packages",
       "automerge": true,
       "rangeStrategy": "replace"
     },
@@ -64,7 +64,7 @@
       "matchPackagePatterns": [
         "*"
       ],
-      "groupName": "development dependencies",
+      "groupName": "Development dependencies",
       "excludePackagePatterns": [
         "^typo3/"
       ],

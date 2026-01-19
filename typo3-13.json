@@ -11,7 +11,7 @@
       "matchPackageNames": [
         "typo3/cms-**"
       ],
-      "groupName": "TYPO3 Core update",
+      "groupName": "TYPO3 Core",
       "rangeStrategy": "update-lockfile",
       "allowedVersions": "<=13.4.99"
     }

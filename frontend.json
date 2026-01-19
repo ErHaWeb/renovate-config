@@ -28,7 +28,7 @@
         "*"
       ],
       "rangeStrategy": "replace",
-      "groupName": "frontend runtime dependencies",
+      "groupName": "Frontend runtime dependencies",
       "enabled": true
     },
     {
@@ -49,7 +49,7 @@
         "*"
       ],
       "rangeStrategy": "replace",
-      "groupName": "frontend build dependencies",
+      "groupName": "Frontend build dependencies",
       "enabled": true,
       "automerge": true
     }

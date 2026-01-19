@@ -49,7 +49,7 @@
         "lochmueller/staticfilecache",
         "lolli/dbdoctor"
       ],
-      "groupName": "Enabled Extension Updates",
+      "groupName": "Enabled Extensions",
       "rangeStrategy": "in-range-only",
       "enabled": true
     }
